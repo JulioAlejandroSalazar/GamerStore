@@ -1,55 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamer Store</title>
-    <link rel="stylesheet" href="css/Julio_Salazar_CSS_Semana2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Gamer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- css personalizado -->
+  <link rel="stylesheet" href="css/Julio_Salazar_CSS_Semana2.css">
 </head>
 <body>
 
-    <header>
-        <h1>Tienda Gamer</h1>
-        <p>Tu lugar favorito para los últimos videojuegos y accesorios de gaming.</p>
-    </header>
+  <!-- navbar de bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tienda Gamer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar/Ocultar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+      <!-- links del menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section id="productos">
-        <h2>Productos destacados</h2>
-        <ul>
-            <li>
-                <h3>Minecraft</h3>
-                <p>Construye tu propio mundo como tú quieras.</p>
-                <img src="https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w" alt="Juego 1">
-            </li>
-            <li>
-                <h3>Tetris</h3>
-                <p>Resuelve puzzles desafiantes.</p>
-                <img src="https://m.media-amazon.com/images/I/61M3rDwh4qL.png" alt="Juego 2">
-            </li>
-            <li>
-                <h3>Super Mario Bros</h3>
-                <p>Un clásico de plataformas.</p>
-                <img src="https://images.steamusercontent.com/ugc/794263213710474663/56FC1D9E69A18E93EEF13E56DB5D9718FE046382/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Accesorio 1">
-            </li>
-        </ul>
-    </section>
+  <!-- carousel de bootstrap -->
+  <section id="inicio" class="mt-3">
+    <div class="container d-flex justify-content-center">
+        <div id="carouselExample" class="carousel slide w-50" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="https://m.media-amazon.com/images/I/61M3rDwh4qL.png" class="d-block w-100" alt="Tetris">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w" class="d-block w-100" alt="Minecraft">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="https://images.steamusercontent.com/ugc/794263213710474663/56FC1D9E69A18E93EEF13E56DB5D9718FE046382/?imw=512" class="d-block w-100" alt="Super Mario Bros">
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <footer id="contacto">
-        <p>Dirección: Av Bernardo O'Higgins 123, Santiago</p>
-        <p>Síguenos en:
-            <a href="https://facebook.com" target="_blank">Facebook</a> |
-            <a href="https://twitter.com" target="_blank">Twitter</a> |
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </p>
-    </footer>
+      <!-- controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
 
+  <!-- productos en grid con cards -->
+  <section id="productos" class="container my-5">
+    <h2 class="text-center mb-4">Productos destacados</h2>
+    <div class="row g-4">
+      
+      <!-- card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 producto-1">
+          <img src="https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w" class="card-img-top" alt="Minecraft">
+          <div class="card-body text-white text-center">
+            <h5 class="card-title">Minecraft</h5>
+            <p class="card-text">Construye tu propio mundo como tú quieras.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 producto-2">
+          <img src="https://m.media-amazon.com/images/I/61M3rDwh4qL.png" class="card-img-top" alt="Tetris">
+          <div class="card-body text-white text-center">
+            <h5 class="card-title">Tetris</h5>
+            <p class="card-text">Resuelve puzzles desafiantes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 producto-3">
+          <img src="https://images.steamusercontent.com/ugc/794263213710474663/56FC1D9E69A18E93EEF13E56DB5D9718FE046382/?imw=512" class="card-img-top" alt="Super Mario Bros">
+          <div class="card-body text-white text-center">
+            <h5 class="card-title">Super Mario Bros</h5>
+            <p class="card-text">Un clásico de plataformas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer id="contacto" class="bg-dark text-white text-center py-4">
+    <p>Dirección: Av Bernardo O'Higgins 123, Santiago</p>
+    <p>Síguenos en:
+      <a href="https://facebook.com" target="_blank" class="text-white">Facebook</a> |
+      <a href="https://twitter.com" target="_blank" class="text-white">Twitter</a> |
+      <a href="https://instagram.com" target="_blank" class="text-white">Instagram</a>
+    </p>
+  </footer>
+
+  <!-- scripts de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

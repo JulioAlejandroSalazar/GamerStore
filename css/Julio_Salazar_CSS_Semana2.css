@@ -87,15 +87,21 @@ nav a:hover {
     margin-top: 10px;
 }
 
-#productos li:nth-child(1) {
-    border-color: #00ffcc;
-}
-#productos li:nth-child(2) {
-    border-color: #ff66cc;
-}
-#productos li:nth-child(3) {
-    border-color: #c84900;
-}
+.producto-1 {
+    border: 2px solid #00ffcc;
+    background-color: #00ffcc22;
+  }
+  .producto-2 {
+    border: 2px solid #ff66cc;
+    background-color: #ff66cc22;
+  }
+  .producto-3 {
+    border: 2px solid #c84900;
+    background-color: #c8490022;
+  }
+  
+   
+  
 
 footer {
     background: #2a2a40;
