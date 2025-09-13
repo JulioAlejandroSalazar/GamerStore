@@ -99,6 +99,12 @@ nav a:hover {
     border: 2px solid #c84900;
     background-color: #c8490022;
   }
+
+.card.bg-gris {
+background-color: #212429;
+color: white;
+}
+  
   
    
   
