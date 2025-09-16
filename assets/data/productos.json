@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Minecraft",
+        "descripcion": "Construye tu propio mundo como tú quieras.",
+        "imagen": "https://play-lh.googleusercontent.com/27O5tpaYE82W6m30rJ_MX3-UvshlDM6O8oXDxb6GseYW2T7P8UNT19727MGmz-0q3w",
+        "precio": 20000
+    },
+    {
+        "titulo": "Tetris",
+        "descripcion": "Resuelve puzzles desafiantes.",
+        "imagen": "https://m.media-amazon.com/images/I/61M3rDwh4qL.png",
+        "precio": 10000
+    },
+    {
+        "titulo": "Super Mario Bros",
+        "descripcion": "Un clásico de plataformas.",
+        "imagen": "https://images.steamusercontent.com/ugc/794263213710474663/56FC1D9E69A18E93EEF13E56DB5D9718FE046382/?imw=512",
+        "precio": 30000
+    }
+]
